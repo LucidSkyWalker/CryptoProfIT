@@ -1,6 +1,7 @@
 # CryptoProfIT (Alpha Version)   
 <img align="right" src="https://user-images.githubusercontent.com/19948182/37255611-f5497340-254e-11e8-93a4-43fe296e20b2.png" width="150">
 Free Python Script to process your trade histories. The profit result can be used for Taxes.<br />
+
 The output are two csv-files. Example Screenshots can be found below.  
 
 The output files contain: 
@@ -16,6 +17,8 @@ Supported Exchanges: Binance, Bitfinex, Bittrex, Kraken, Mercatox, Poloniex, Cos
 
 \*A dummy file is included that can be used to easily add trades of other exchanges.<br />
 If you give me a csv-file export from other exchanges (you can modify the digits for privacy) I will add them.
+
+## Screenshots
 
 ## Requirements
 For now, there is no Gui so you have to use the python script.<br />
@@ -50,13 +53,24 @@ Author: Alex Prengère
 Home Page: https://github.com/alexprengere/currencyconverter
 
 ### Fork information:
-A tax accountant told me, you need to pay taxes on the profit of your received coins as soon as you get them.  
-Therefore a "fake" trade needs to be manually added to one of the csv export files in "trade_history_files".  
+A tax accountant told me, you need to pay taxes on the profit of your received forked coins as soon as you get them.  
+Therefore a "dummy" trade needs to be manually added to one of the csv export files in "trade_history_files".  
 * Add a "Buy" transaction at the moment you reveived the coins. (with price "0")   
 * Add a "Sell" transaction a few seconds later (price = initial price of forked coin) --> you made the inital profit.  
 * Add a "Buy" transaction a few seconds later than before (price = initial price) --> Because you know still got the coins   
 Simplifing this could be a feature in a future version...
 
+### Information:
+
+* For receiving the minute price data of bitcoin, the historical data of coinbase is used.
+* For receiving the ETH price data, the poloniex API is used ( ~ 5min accuracy )
+* For the USD/EUR exchange rate, the european central bank data is used.
+
+### Disclaimer:
+
+I wrote this tool to calculate my taxes and thought I share it.<br />
+I do not guarantee that the results are 100% accurate, but the script might help you<br />
+getting a well formatted output csv you can work with.
 
 
 ## Contact
