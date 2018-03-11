@@ -1,7 +1,6 @@
 # CryptoProfIT (Alpha Version)   
 <img align="right" src="https://user-images.githubusercontent.com/19948182/37255611-f5497340-254e-11e8-93a4-43fe296e20b2.png" width="150">
-Free Python Script to process your trade histories. The profit result can be used for Taxes.<br />
-
+Free Python Script to process your trade histories. The profit result can be used for Taxes.<br /><br />
 The output are two csv-files. Example Screenshots can be found below.  
 
 The output files contain: 
@@ -19,6 +18,17 @@ Supported Exchanges: Binance, Bitfinex, Bittrex, Kraken, Mercatox, Poloniex, Cos
 If you give me a csv-file export from other exchanges (you can modify the digits for privacy) I will add them.
 
 ## Screenshots
+Screenshot of the output.csv. The data of all exchanges is formatted in its specific ways and displayed in a uniform style.<br /> **Type** always refers to the first token of the pair! (First transaction shows buying XRP by BTC)<br /> **Base Price** always refers to the second token of the pair.<br />**Base Price in USD** shows the price of the second token in USD.<br /><br />
+<img src="https://user-images.githubusercontent.com/19948182/37256193-9a14af4a-2557-11e8-9844-2d3045653609.png" width="700"><br /><br />
+Screenshot of the holding_output.csv. This file can be used to specify your remaining holding times,<br />
+as Capital gains do not need to be taxed in many countries after 12 month<br />
+The picture shows (in red), that the first of the remaining ETH were bought on 2017-06-02, meaning that this amount is tax-free one year later.<br />
+The blue frame shows the date for the next tokens...<br /><br />
+<img src="https://user-images.githubusercontent.com/19948182/37256327-48d9386a-2559-11e8-9798-2d31e0ecc703.png" width="700"><br /><br />
+
+Console output of the Python script (Not my real data ;) <br /><br />
+<img src="https://user-images.githubusercontent.com/19948182/37256205-bd9a468c-2557-11e8-9853-90d2f1daaa08.png" width="700"><br /><br />
+
 
 ## Requirements
 For now, there is no Gui so you have to use the python script.<br />
