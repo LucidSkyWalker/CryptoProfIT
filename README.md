@@ -1,8 +1,8 @@
 # CryptoProfIT (Alpha Version)   
 <img align="right" src="https://user-images.githubusercontent.com/19948182/37255611-f5497340-254e-11e8-93a4-43fe296e20b2.png" width="150">
-Free Python Script to process your trade histories. The profit result can be used for Taxes.    
-
+Free Python Script to process your trade histories. The profit result can be used for Taxes.<br />
 The output are two csv-files. Example Screenshots can be found below.  
+
 The output files contain: 
 - Sorted full trade history (converts all exchange exports to the same formatting)
 - Fees per Trade (inklusive Overall Payed fees)
