@@ -86,7 +86,7 @@ def transaction(type, pair, amount1, amount2, timestamp, price, base_price, fiat
                   "Your tradehistory seems to be is incomplete. If this transaction involves a forked coin"
                   "you need add the receiving date for proper profit calculation, see ReadMe.txt"
                   .format(amount2, pair[1], date, exchange, amount_to_delete))
-            a = input("Press 'c' to continue, 'a' to 'always continue', any other key to abort...")
+            a = input("Press 'c' to continue, any other key to abort...")
             if a != 'c':
                 logging.info("User aborted due to a inaccurate trade history")
                 sys.exit("Aborted")
