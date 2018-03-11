@@ -93,3 +93,6 @@ getting a well formatted output csv you can work with.
 ## Contact
 If you run into any problems, don't hesitate to contact me at any time. 
 
+## XRB TO THE MOON
+Donations: xrb_3mwnrhq1d4pdcrgegyygic1a1wpcbnsaj6pd5656dg3yxio3cyg1rn4u1umx
+
