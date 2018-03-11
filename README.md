@@ -47,6 +47,8 @@ Setting up Python:
 * Install package: "tables" (type: "pip3 install tables", hit ENTER)
 
 Using the script:
+* Download or clone this git
+* Download the BTC_Data file [(link here)]((https://github.com/LucidSkyWalker/CryptoProfIT/raw/master/BTC_Data/fixed.hdf5)
 * Download the csv-file exports and copy them into the folder "trade_history_files"   
 Note: Binance will give you an excel file. Export this file as a csv
 * Rename the csv-files into the exchange names with lowercase. E.g. "kraken.csv", "binance.csv"...
