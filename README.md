@@ -15,7 +15,8 @@ The output files contain:
 Supported Exchanges: Binance, Bitfinex, Bittrex, Kraken, Mercatox, Poloniex, Costum*
 
 \*A dummy file is included that can be used to easily add trades of other exchanges.<br />
-If you give me a csv-file export from other exchanges (you can modify the digits for privacy) I will add them.
+If you give me a csv-file export from other exchanges (you can modify the digits for privacy) I will add them.<br /><br />
+**PLEASE READ**: I wrote this tool to calculate my taxes and it is doing its job fine. Nevertheless it is not well tested yet. If you run into trouble, please write an issue and I will fix it! Thank you :)
 
 ## Screenshots
 Screenshot of the output.csv. The data of all exchanges is formatted in its specific ways and displayed in a uniform style.<br /> **Type** always refers to the first token of the pair! (First transaction shows buying XRP by BTC)<br /> **Base Price** always refers to the second token of the pair.<br />**Base Price in USD** shows the price of the second token in USD.<br /><br />
