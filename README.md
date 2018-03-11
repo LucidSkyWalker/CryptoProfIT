@@ -1,5 +1,5 @@
-# CryptoTaxator (Alpha Version)
-Free Python Script to process your trade histories
+# CryptoProfIT (Alpha Version)
+Free Python Script to process your trade histories. The profit result can be used for Taxes.
 
 The output are two csv-files. Example Screenshots can be found below.  
 The output files contain: 
