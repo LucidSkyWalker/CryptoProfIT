@@ -14,7 +14,14 @@ c = CurrencyConverter(fallback_on_wrong_date=True, fallback_on_missing_rate=True
 
 # Read BTC Price Data
 BTC_data = "./BTC_Data/fixed.hdf5"
-price_data = pd.read_hdf(BTC_data)
+try:
+    price_data = pd.read_hdf(BTC_data)
+except:
+    logging.warning("fixed.hdf5 file is missing or corrupt")
+    print("It seems like you didn't download the 'fixed.hdf5' file. Please read the HOWTO:\n"
+          "https://github.com/LucidSkyWalker/CryptoProfIT/blob/master/README.md")
+    input("Press enter to exit")
+    sys.exit()
 
 # Getting tradefiles
 filelist = os.listdir("./trade_history_files")

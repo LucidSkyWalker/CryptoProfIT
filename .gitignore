@@ -1,3 +1,6 @@
-BTC_DATA/
 .git/
 __pycache__/
+*holding*
+*info*
+*output*
+.idea/
