@@ -166,7 +166,7 @@ def Read_Poloniex():
                   .format(split_cache[1]))
             sys.exit("Trades with {} as base are not yet supported. Please contact me, see Readme.txt."
                      .format(split_cache[1]))
-    poloniex_orders.append(row[:9])
+        poloniex_orders.append(row[:9])
     return poloniex_orders
 
 
