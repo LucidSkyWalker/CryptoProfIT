@@ -33,11 +33,11 @@ with open(output_file, 'w') as output:
     for i in range(len(market_orders)):
         if fiat_of_profit == "USD":
             # US EXCEL uses "." for displaying decimals
-            row = [o.replace(",", ".") for o in market_orders[i]]
+            row = [str(o).replace(",", ".") for o in market_orders[i]]
             row.append(str(profit_list[i]).replace(".", ",")+" USD")
         if fiat_of_profit == "EUR":
             # German EXCEL uses "," for displaying decimals
-            row = [o.replace(".", ",") for o in market_orders[i]]
+            row = [str(o).replace(".", ",") for o in market_orders[i]]
             # Profit USD / Exchangerate = Profit EUR. market_orders[i][0] -> gets the date of this profit
             row.append(str((round(profit_list[i]/Reading_Tradefiles
                            .Get_EUR_USD_exchange_rate(datetime.datetime
