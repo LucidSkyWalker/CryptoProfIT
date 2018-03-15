@@ -48,7 +48,7 @@ Setting up Python:
 
 Using the script:
 * Download or clone this git
-* Download the historical price data file [link here](https://drive.google.com/open?id=1aiW2fq6sul4svVQp5iTqVXTdHn7vMMTh)
+* Download the historical price data file [(link here)](https://drive.google.com/open?id=1aiW2fq6sul4svVQp5iTqVXTdHn7vMMTh)
 * Copy the file into the BTC_Data folder and overwrite existing fixed.hdf5
 * Download the csv-file exports and copy them into the folder "trade_history_files"   
 Note: Binance will give you an excel file. Open that and save it as binance.csv  
