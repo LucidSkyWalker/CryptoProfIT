@@ -301,6 +301,7 @@ def Read_Bitfinex():
         split_cache = row[1].split("/")
         row[1] = row[1].replace('/', '-')
         price_cache = row[3]
+        fee_cache = row[4]
         row[3] = abs(float(row[2]))
         if "-" in row[2]:
             row[2] = "Sell"
@@ -308,10 +309,14 @@ def Read_Bitfinex():
             row[2] = "Buy"
         row[4] = price_cache
         # Calculating Fees relative to BasePair
-        if row[6] == split_cache[1]:
-            row[5] = abs(float(row[6]))
-        if row[6] == split_cache[0]:
-            row[5] = abs(float(row[4]) * float(row[5]))
+        # If Feetoken == BasePair token
+        if row[5] == split_cache[1]:
+            row[6] = row[5]
+            row[5] = abs(float(fee_cache))
+        # If Feetoken == Other token (not basepair token)
+        if row[5] == split_cache[0]:
+            row[6] = split_cache[1]
+            row[5] = abs(float(row[4]) * float(fee_cache))
         row[6] = split_cache[1]
         row.append("Bitfinex")
         if "BTC" in row[1]:
