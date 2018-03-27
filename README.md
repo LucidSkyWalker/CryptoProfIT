@@ -12,7 +12,7 @@ The output files contain:
 - Display the different BUY-INs by amount and date. So you can control the 12 month holding period.
 
 
-Supported Exchanges: Binance, Bitfinex, Bittrex, Kraken, Mercatox, Poloniex, Costum*
+Supported Exchanges: Binance, Bittrex, Kraken, Mercatox, Poloniex, Costum*
 
 \*A dummy file is included that can be used to easily add trades of other exchanges.<br />
 If you give me a csv-file export from other exchanges (you can modify the digits for privacy) I will add them.<br /><br />
